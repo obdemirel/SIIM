@@ -29,7 +29,7 @@ Input data:
 
 Resuls (compared to split-slice-GRAPPA)
 
-![Output](images/res2.png)
+![Output](images/res3.png)
 
  
 
