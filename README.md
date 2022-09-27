@@ -27,27 +27,9 @@ Input data:
 - sense_maps (RO x PE x NO_C x Dynamics) with CAIPI shifts
 
 
-Output data - Resuls (compared to split-slice-GRAPPA)
+Resuls (compared to split-slice-GRAPPA)
 
 ![Output](assets/output.png)
 
-Readout concatenation is used to generate extended k-space and calibration region.
-- Input: acquired k-space, acs (CAIPIRINHA shifted)
-- Output: extended k-space, ROCK-SPIRiT kernels, kernel sizes
-
-
-
-ROCK-SPIRiT
-- Input: extended k-space, sensitivity maps, ROCK-SPIRiT kernels, kernel sizes,
-         slice acceleration, #of CG iterations
-- Output: reconstructed extended-kspace, reconstructed SENSE-1 Images
-         
-Regularized ROCK-SPIRiT
-- Input: extended k-space, sensitivity maps, ROCK-SPIRiT kernels, kernel sizes,
-         slice acceleration, #of CG iterations, # of ADMM loops
-- Output: reconstructed extended-kspace, reconstructed SENSE-1 Images
-
-Regularization:
-- Locally low rank (LLR) regularization is supported via ADMM in regularized ROCK-SPIRiT
-- To avoid border artifacts, CAIPIRINHA shifts are re-shifted/shifted before/after the regularization
+ 
 
